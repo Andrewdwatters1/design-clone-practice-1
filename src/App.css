@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+  overflow: auto;
+}
+
+.section-title-text {
+  font-size: 36px;
+}
+
+/*********** NAVBAR CSS ***********/
+.navbar {
+  height: 90px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26252A;
+}
+
+.nav-title {
+  display: flex;
+  color: #FED136;
+  justify-content: center;
+  width: 30%;
+  padding-left: 25px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 45%;
+  color: white;
+  padding-right: 35px;
+}
+
+.fa-bars {
+  display: none;
+  background-color: #FED136;
+  color: white;
+}
+
+.nav-hidden {
+  display: none;
+  background-color: #26252A;
+  color: white;
+}
+
+.nav-dropdown {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+/*********** HEADER IMAGE CSS ***********/
+
+.header-outer {
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-main {
+  background-image: url('./design-clone-header-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 66.8vh;
+  margin-top: -50px;
+  z-index: -1;
+}
+
+.header-shift {
+  padding-top: 180px;
+}
+
+.header-italic {
+  font-size: 34px;
+  font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+.header-bold {
+  margin-top: -30px;
+  font-size: 70px;
+  color: white;
+}
+
+.header-button {
+  margin-top: -10px;
+  background-color: #FED136;
+  color: white;
+  border: solid black 1px;
+  border-radius: 4px;
+  height: 60px;
+  width: 180px;
+  font-size: 18px;
+}
+
+/*********** SERVICES CSS ***********/
+
+.services-outer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 74vh;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.services-header {
+  padding-bottom: 50px;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.services-cont-each {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********** ICONS ***********/
+
+.fa-shopping-cart {
+  background-color: #FED136;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.fa-laptop {
+  background-color: #FED136;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.fa-lock {
+  background-color: #FED136;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/************ MEDIA QUERIES ALL ***********/
+
+@media (max-width: 925px) {
+  .fa-bars {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 35px;
+    width: 80px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-items {
+    width: 10%;
+  }
+  .header-main {
+    height: 73.8vh;
+  }
+}
+@media (min-width: 1100px) {
+  .navbar {
+    justify-content: space-between;  
+  }
+}
